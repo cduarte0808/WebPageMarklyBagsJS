@@ -42,30 +42,31 @@
             <h1 class="negrita-grande">Formulario de Contacto</h1>
         </div>
         <div class=" formulario">
-            <form action="https://getform.io/f/rbeqmemb" method="POST">
+            <form action="https://getform.io/f/rbeqmemb" method="POST" onsubmit="validarFormularioContacto();">
                 <label class="labelf" for="nombre">Nombre:</label><br>
-                <input class="input1" type="text" id="nombre" name="nombre" required><br><br>
+                <input class="input1" type="text" id="nombre" name="nombre"><br><br>
 
                 <label class="labelf" for="apellido">Apellido:</label><br>
-                <input class="input1" type="text" id="apellido" name="apellido" required><br><br>
+                <input class="input1" type="text" id="apellido" name="apellido"><br><br>
 
                 <label class="labelf" for="edad">Edad:</label><br>
-                <input class="input1" type="number" id="edad" name="edad" required><br><br>
+                <input class="input1" type="number" id="edad" name="edad"><br><br>
 
                 <label class="labelf" for="correo">Correo Electrónico:</label><br>
-                <input class="input1" type="email" id="correo" name="correo" required><br><br>
+                <input class="input1" type="email" id="correo" name="correo"><br><br>
 
                 <label class="labelf" for="fecha-nacimiento">Fecha de Nacimiento:</label><br>
-                <input class="input1" type="date" id="fecha-nacimiento" name="fecha-nacimiento" required><br><br>
+                <input class="input1" type="date" id="fecha-nacimiento" name="fecha-nacimiento"><br><br>
 
                 <label class="labelf" for="numero-contacto">Número de Contacto:</label><br>
-                <input class="input1" type="tel" id="numero-contacto" name="numero-contacto" required><br><br>
+                <input class="input1" type="tel" id="numero-contacto" name="numero-contacto"><br><br>
 
                 <label class="labelf" for="pais">País:</label><br>
-                <input class="input1" type="text" id="pais" name="pais" required><br><br>
+                <input class="input1" type="text" id="pais" name="pais"><br><br>
 
                 <button class="buttonf" type="submit">Enviar</button>
             </form>
+            <p id="mensajeError" class="d-none">Todos los campos del formulario deben estar dilgenciados</p>
         </div>
 
         <div class="tituloforms">
@@ -174,7 +175,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
