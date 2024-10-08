@@ -397,6 +397,12 @@ hr {
     padding-left: 23%;
 }
 
+.mainAPI {
+    text-align: center;
+    padding-left: 23%;
+    width: 1100px;
+}
+
 .tarjeta {
     border: 1px solid gray;
     width: 40%;
