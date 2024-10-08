@@ -427,6 +427,11 @@ hr {
     height: 22px;
 }
 
+.logCarrito {
+    width: 25px;
+    height: 30px;
+}
+
 /* página bags.html*/
 
 .headerBags {
@@ -554,7 +559,7 @@ hr {
     font-family: Arial, sans-serif;
     margin-bottom: 10px;
     padding: 0;
-    height: 105vh;
+    height: 95vh;
     width: 138vh;
     text-align: center;
     padding-left: 19%;
@@ -658,8 +663,17 @@ iframe {
 
 }
 
+.selectf {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #000000be;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
 .d-block {
-    display: block;
+    display: block !important;
     color: red;
 }
 
@@ -668,9 +682,15 @@ iframe {
 }
 
 .invalido {
-    border: 2px solid red
+    border: 2px solid red;
+    color: red;
 }
 
 .valido {
     border: 2px solid green
+}
+
+.texto_verde {
+    color: green;
+    display: block !important;
 }

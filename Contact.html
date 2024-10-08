@@ -41,32 +41,38 @@
         <div class="tituloforms">
             <h1 class="negrita-grande">Formulario de Contacto</h1>
         </div>
-        <div class=" formulario">
-            <form action="https://getform.io/f/rbeqmemb" method="POST" onsubmit="validarFormularioContacto();">
+        <div class="formulario">
+            <form id="formularioContacto">
                 <label class="labelf" for="nombre">Nombre:</label><br>
-                <input class="input1" type="text" id="nombre" name="nombre"><br><br>
+                <input class="input1" type="text" id="nombre" name="nombre" placeholder="Ingrese el Nombre"><br>
 
                 <label class="labelf" for="apellido">Apellido:</label><br>
-                <input class="input1" type="text" id="apellido" name="apellido"><br><br>
+                <input class="input1" type="text" id="apellido" name="apellido" placeholder="Ingrese el Apellido"><br>
 
                 <label class="labelf" for="edad">Edad:</label><br>
-                <input class="input1" type="number" id="edad" name="edad"><br><br>
+                <input class="input1" type="number" id="edad" name="edad" maxlength="110" placeholder="Seleccione la Edad"><br>
 
                 <label class="labelf" for="correo">Correo Electrónico:</label><br>
-                <input class="input1" type="email" id="correo" name="correo"><br><br>
+                <input class="input1" type="email" id="correo" name="correo" placeholder="Ingrese el Correo Electrónico"><br>
 
                 <label class="labelf" for="fecha-nacimiento">Fecha de Nacimiento:</label><br>
-                <input class="input1" type="date" id="fecha-nacimiento" name="fecha-nacimiento"><br><br>
+                <input class="input1" type="date" id="fecha-nacimiento" name="fecha-nacimiento"><br>
 
                 <label class="labelf" for="numero-contacto">Número de Contacto:</label><br>
-                <input class="input1" type="tel" id="numero-contacto" name="numero-contacto"><br><br>
+                <input class="input1" type="tel" id="numero-contacto" name="numero-contacto" placeholder="Ingrese el Número de Contacto"><br>
 
                 <label class="labelf" for="pais">País:</label><br>
-                <input class="input1" type="text" id="pais" name="pais"><br><br>
-
+                <select class="selectf" id="pais" name="pais">
+                        <option value="" selected>Seleccione el País</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="México">México</option>
+                        <option value="Argentina">Argentina</option>
+                </select>
+                <br>
                 <button class="buttonf" type="submit">Enviar</button>
+                <p id="mensajeError" class="d-none">Alguno de los campos del formulario no está diligenciado o es inválido</p>
             </form>
-            <p id="mensajeError" class="d-none">Todos los campos del formulario deben estar dilgenciados</p>
+            
         </div>
 
         <div class="tituloforms">
@@ -175,7 +181,7 @@
             </div>
         </div>
     </footer>
-    <script src="./js/script.js"></script>
+    <script src="./js/validarContacto.js"></script>
 </body>
 
 </html>
