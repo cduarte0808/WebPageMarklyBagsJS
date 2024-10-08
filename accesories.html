@@ -81,6 +81,26 @@
 
             </div>
         </section>
+        <br>
+        <div class="container-fluid row col-9 justify-content:center">
+            <!--ejemplo de cargar imágenes 1 o varias-->
+                <h1 class="display-6">Cargue de Mis Imágenes</h1><br>
+                <p class="caja">
+                    <input type="file" name="archivo" id="archivo" accept="image/jpeg" placeholder="Cargue de un solo archivo" class="btns8">
+                    <br>
+                    <input type="file" name="archivos" id="archivos" accept="image/jpeg" class="btns8" placeholder="Cargue de varios archivos" multiple>
+                </p>
+
+                <!--para cargar una imagen... para esto la etiqueta input file de la linea 41 no debe tener el atributo multiple-->
+                <p class="parrafoI">
+                    <img id="imagen" class="imagen" src="" alt="imagen">
+                </p>
+
+                <!--para cargar varias imagenes .. para esto la etiqueta input de la linea 41 ebe tener el atributo multiple-->
+                <p id="images" class="parrafoI centrar">
+                </p>  
+        </div>
+        <br>
         <section class="vidYT">
             <div class="container-fluid row col-9 justify-content:center">
                 <iframe width="72%" height="250" src="https://www.youtube.com/embed/9lQwkSbLSUY?si=c1_TBEwN-z_U14aM"
@@ -171,6 +191,7 @@
           </div>
         </div>
       </footer>
+      <script src="./js/cargueImagenes.js"></script>
 </body>
 
 </html>

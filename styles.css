@@ -464,7 +464,7 @@ hr {
 
 .mainAccesorios {
     text-align: center;
-    padding-left: 18%;
+    padding-left: 19%;
 }
 
 .vidYT{
@@ -699,4 +699,35 @@ iframe {
 .texto_verde {
     color: green;
     display: block !important;
+}
+
+.caja {
+    text-align: center;
+    padding: 15px;
+    border: 3px solid rgb(129,11,11);
+}
+.parrafoI {
+    padding: 15px;
+    border: 3px solid rgb(92,5,92);
+}
+.centrar {
+    text-align: center;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: blueviolet;
+}
+.imagen {
+    padding: 0.2in;
+    width: 30%;
+    height: 50%;
+    margin: auto;
+    display: block;
+}
+
+.divImagenes {
+    /*display: flex;
+    justify-content: space-between;*/
+    padding-left: 19px;
+    width: 900px;
+    height: 200px;
 }
